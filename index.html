@@ -5,59 +5,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Amiri&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <link rel="stylesheet" href="main.css">
-  <title>task list</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+  <title>Number Guesser</title>
 </head>
 
 <body>
   <div class="container">
-    <div class="row">
-      <div class="col s12">
-        <div id="main" class="card">
-          <div class="card-content">
-            <span class="card-title">
-              قائمة المهام
-            </span>
-            <div class="row">
-              <form id="task-form">
-                <div class="input-field col s12">
-                  <input type="text" name="task" id="task">
-                  <label for="task">مهمة جديدة</label>
-                </div>
-                <input type="submit" value="اضف مهمة" class="btn">
-              </form>
-            </div>
-          </div>
-          <div class="card-action">
-            <h5 id="task-title">المهام المسجلة</h5>
-            <div class="input-field col s12">
-              <input type="text" name="filter" id="filter">
-              <label for="filter">فلتر المهام</label>
-            </div>
-            <ul class="collection"></ul>
-            <a href="#" class="clear-tasks btn myBlack">حذف جميع المهام</a>
-          </div>
-        </div>
-      </div>
+    <h1>Number Guesser</h1>
+    <div id="game">
+      <p>Guess a number between <span class="min-num"></span> and <span class="max-num"></span></p>
+      <input type="number" placeholder="enter your guess...." id="guess-input">
+      <input type="submit" value="Submit" id="guess-btn">
+      <p class="message"></p>
+
     </div>
-    <a href="index.html" class="btn myBlack">الثيم الأساسي</a>
-    <a href="#" onclick="myRed()" class=" btn my-theme-red">ثيم احمر</a>
-    <a href="#" onclick="myBlue()" class="btn my-theme-blue">ثيم ازرق</a>
   </div>
 
-
-
-  <!-- JQUARY -->
-  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-    crossorigin="anonymous"></script>
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <!-- main js -->
   <script src="main.js"></script>
 </body>
 
