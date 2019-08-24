@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,60 +6,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Amiri&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <link rel="stylesheet" href="main.css">
-  <title>task list</title>
+  <link rel="stylesheet" href="https://bootswatch.com/4/litera/bootstrap.min.css">
+  <style>
+    .grey-border {
+      border-top: #efeff0 1px solid;
+      border-bottom: #efeff0 1px solid;
+    }
+  </style>
+  <title>GitHub Finder</title>
 </head>
 
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="col s12">
-        <div id="main" class="card">
-          <div class="card-content">
-            <span class="card-title">
-              task list
-            </span>
-            <div class="row">
-              <form id="task-form">
-                <div class="input-field col s12">
-                  <input type="text" name="task" id="task">
-                  <label for="task">New Task</label>
-                </div>
-                <input type="submit" value="Add a Task" class="btn">
-              </form>
-            </div>
-          </div>
-          <div class="card-action">
-            <h5 id="task-title">Tasks</h5>
-            <div class="input-field col s12">
-              <input type="text" name="filter" id="filter">
-              <label for="filter">Tasks filter</label>
-            </div>
-            <ul class="collection"></ul>
-            <a href="#" class="clear-tasks btn myBlack">Delete all tasks</a>
-          </div>
-        </div>
-      </div>
+
+
+  <nav class="navbar navbar-dark bg-primary mb-3">
+    <div class="container">
+      <a href="#" class="navbar-brand">GitHub Finder</a>
     </div>
-    <a href="index.html" class="btn myBlack">main theme</a>
-    <a href="#" onclick="myRed()" class=" btn my-theme-red">Red Theme</a>
-    <a href="#" onclick="myBlue()" class="btn my-theme-blue">Blue Theme</a>
+  </nav>
+  <div class="container searchContainer">
+    <div class="search card card-body">
+      <h1>Search GitHub Users</h1>
+      <p class="lead">Enter a username to fetch a user profile and repos.</p>
+      <input type="text" id="searchUser" class="form-control" placeholder="GitHub Username ...">
+    </div>
+    <br>
+    <div id="profile"></div>
   </div>
 
+  <footer class="mt-5 p-3 text-center grey-border">
+    GitHub Finder &copy;
+  </footer>
 
-
-  <!-- JQUARY -->
-  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  <!-- BOOTSTRAP -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <!-- main js -->
-  <script src="main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <!-- MAIN -->
+  <script src="github.js"></script>
+  <script src="ui.js"></script>
+  <script src="app.js"></script>
 </body>
 
 </html>
