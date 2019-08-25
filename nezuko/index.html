@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<style>
+  #nezuko {
+    display: none;
+    transition: opacity 1s;
+  }
+
+  a {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+
+  .btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  }
+</style>
+
+<body>
+
+  <div id="nezuko" class="img">
+    <img src="nezuko.png">
+  </div>
+  <a class="btn" href="#" type="button" onclick="reSpawn()">Click me to respawn a cute demon</a>
+
+  <script>
+    var onNez = 'block';
+    var offNez = 'none';
+
+    function reSpawn() {
+      var nezuko = document.getElementById('nezuko')
+      var currentDisplay = window.getComputedStyle(nezuko, null).display;
+
+      if (currentDisplay === offNez) {
+        nezuko.style.display = onNez;
+        nezuko.style.opacity = '1';
+      } else {
+        nezuko.style.display = offNez;
+        nezuko.style.opacity = '0';
+      }
+    }
+  </script>
+</body>
+
+</html>
