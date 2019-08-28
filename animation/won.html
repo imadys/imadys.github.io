@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <style>
+    .ani {
+      height: 220px;
+      width: 220px;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      animation: billing 1s infinite alternate;
+    }
+
+    .btn {
+      text-decoration: none;
+      background-color: #9b00b6;
+      color: #fff;
+      padding: 1rem 2rem 1rem 2rem;
+      border-radius: 40px;
+      font-size: 2rem;
+      transition: 1s ease;
+
+    }
+
+    .btn:hover {
+      background-color: #c10ce0;
+    }
+
+    @keyframes billing {
+      from {
+        transform: translateY(0px)
+      }
+
+      to {
+        transform: translateY(20px)
+      }
+    }
+  </style>
+
+  <title>Document</title>
+</head>
+
+<body>
+  <h1 style="text-align: center;">YOU WIN!!</h1>
+  <div class="ani">
+    <a href="index.html" class="btn btn-primary" target="_blank">Play Again</a>
+  </div>
+</body>
+
+</html>
