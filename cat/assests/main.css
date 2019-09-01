@@ -1,0 +1,143 @@
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background-color: #1A1B1C;
+  color: #fff;
+  font-family: 'Chilanka' , cursive;
+}
+
+/* HOME SECTION */
+.bg-light {
+  background-color: #f8f9fa00!important;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+  color: #fff;
+  transform: scale(1.2);
+}
+.navbar-light .navbar-nav .nav-link{
+  color: #fff !important;
+  transition: ease-in 0.2s;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  transform: scale(1.2);
+}
+#home-section{
+  background-image: url(../assests/imgs/firstcat.jpg);
+  position: relative;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-bottom: 10rem;
+}
+.intro{
+  margin: 10rem;
+  font-size: 2rem;
+}
+.scroller{
+
+}
+.scroller img{
+  animation: flowing alternate infinite 1s;
+  margin-top: -6rem;
+}
+
+
+/* about */
+#about-section{
+
+}
+.about{
+padding: 4rem;
+background-color: #242526;
+-webkit-border-top-right-radius: 552px;
+-webkit-border-bottom-left-radius: 552px;
+-moz-border-radius-topright: 552px;
+-moz-border-radius-bottomleft: 552px;
+border-top-right-radius: 552px;
+border-bottom-left-radius: 552px;
+width: 50%;
+margin: auto;
+}
+
+/* Gallary */
+#gallary-section{
+  margin-top: 20rem;
+  margin-bottom: 10rem;
+}
+
+/* NONE */
+.source{
+  color: #fff;
+}
+.source:hover{
+  color: #fff;
+}
+#none a{
+  animation: btnflow 4s infinite alternate;
+}
+#none{
+  margin-bottom: 5rem;
+}
+.btn-primary {
+  color: #1A1B1C !important;
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+.btn-primary:hover {
+  color: #fff !important;
+  background-color: rgb(33, 33, 34) !important;
+  border-color: rgb(33, 33, 34) !important;
+}
+
+/* footer */
+#footer{
+  margin-top: 5rem;
+  background-color: #242526;
+  padding: 2rem;
+}
+
+@keyframes btnflow{
+  from{
+    transform: translateY(0px)
+  } to{
+    transform: translateY(5px)
+  }
+}
+
+@keyframes flowing{
+  from{
+    transform: translateY(0px)
+  } to{
+    transform: translateY(15px)
+  }
+}
+/* HAMBURGER */
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 100%)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar-light .navbar-toggler {
+  color: rgba(0,0,0,.5);
+  border-color: rgba(0, 0, 0, 0);
+}
+
+/* MEADI */
+
+@media (max-width: 991.98px){
+  .about{
+    padding: 4rem;
+background-color: #242526;
+-webkit-border-top-right-radius: unset;
+-webkit-border-bottom-left-radius: unset;
+-moz-border-radius-topright: unset;
+-moz-border-radius-bottomleft: unset;
+border-top-right-radius: unset;
+border-bottom-left-radius: unset;
+width: unset;
+margin: unset;
+  }
+}
