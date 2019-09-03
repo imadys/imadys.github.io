@@ -1,0 +1,460 @@
+
+body{
+  font-family: 'Oswald', sans-serif;
+}
+
+
+/* NAV SECTION */
+.bg-light {
+  padding: 1rem;
+  background-color: #ffffff!important;
+  font-family: 'Chilanka', cursive;
+  -webkit-box-shadow: 0px 5px 41px -19px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 5px 41px -19px rgba(0,0,0,0.75);
+box-shadow: 0px 5px 41px -19px rgba(0,0,0,0.75);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #64B25B;
+  transition: ease-in 0.2s;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+  background: rgb(243, 243, 243);
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+  color: rgb(85, 144, 79);
+  background: rgb(243, 243, 243);
+}
+/* Carousel section */
+.carousel-control-prev-icon{
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2364B25B' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+  width: 2rem;
+  height: 2rem;
+}
+.carousel-control-next-icon{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%2364B25B' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
+  width: 2rem;
+  height: 2rem;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  margin: auto 1rem auto 1rem;
+  width: 4rem;
+  height: 4rem;
+  background-color: rgb(255, 255, 255);
+  background-size: 100%, 100%;
+  border-radius: 50%;
+}
+.carousel-caption {
+  position: absolute;
+  right: unset;
+  bottom: 20px;
+  left: 10%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: unset;
+}
+.carousel-caption h5 {
+   font-family: 'Oswald light';
+   color: #64B25B;
+   font-size: 2rem;
+}
+/* Picks section */
+#picks-section{
+  margin-top: 15rem;
+}
+#picks-section h1{
+  font-family: 'Oswald';
+  color: #64B25B;
+}
+.card-picks {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: unset;
+  border-radius: 1.4rem;
+  -webkit-box-shadow: 0px 0px 12px -4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 12px -4px rgba(0,0,0,0.75);
+  box-shadow: 0px 10px 15px -10px rgba(0,0,0,0.75);
+  transition: ease-in 0.2s;
+}
+.card-img-top-picks {
+  width: 100%;
+  border-top-left-radius: calc(.25rem - 1px);
+  border-top-right-radius: calc(.25rem - 1px);
+  border-radius: 1.4rem 1.4rem 0 0;
+}
+.card-title {
+  margin-bottom: .75rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #64B25B;
+  font-family: 'Oswald light';
+}
+.card-text{
+  font-family: 'Oswald light';
+  font-size: 3rem;
+  text-align: center;
+  color: #64B25B;
+}
+.old-price{
+  text-decoration: line-through;
+  color: rgba(0, 0, 0, 0.507);
+  margin-top: -1rem;
+}
+.add-to-cart{
+  margin-left: 9rem;
+  color: #64B25B;
+}
+.price {
+  background-color: #64B25B;
+  width: 50px;
+  margin-top: -4.5rem;
+  border-radius: 0 0 0 1.4rem;
+}
+.price p{
+  font-size: 0.7rem;
+  color: #fff;
+  text-align: center;
+  margin-top: 10px;
+}
+.card-picks:hover{
+  transform: translateY(-10px);
+  transition: ease-out 0.2s;
+}
+/* PROMO SECTION */
+#promo-section{
+  margin-top: 10rem;
+}
+.water-turtle{
+  width: 241.86px;
+  height: 224.83px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.73)), url(../assests/imgs/water-turle.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.water-turtle h1{
+  color: #fff;
+  text-align: center;
+}
+.card-body-promo-water{
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem;
+  background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.73)), url(../assests/imgs/water-turle.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 241.86px;
+  height: 224.83px;
+}
+.card-body-promo-lake{
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem;
+  background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.73)), url(../assests/imgs/lake-turtle.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 241.86px;
+  height: 224.83px;
+}
+.card-body-promo-rocks{
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem;
+  background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.73)), url(../assests/imgs/rocks-turtle.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 241.86px;
+  height: 224.83px;
+}
+.card-title-promo{
+  color: #fff;
+  margin-top: 8rem;
+}
+.food-promo{
+  background-image: url(/assests/imgs/many-turtle.jpg);
+  background-size: cover;
+  background-position: center;
+}
+/* FOOTER SECTION */
+#footer-section{
+  background-color:#272727;
+  color:#fff;
+  font-family: 'Oswald light';
+  margin-top: 5rem;
+  margin-bottom: auto;
+}
+#footer-section a {
+  color: #fff;
+
+}
+.paymaster{
+  text-align: right;
+}
+.paymaster img{
+  width: 50%;
+}
+.copyright{
+  font-family: 'Chilanka';
+  margin-top: 2rem;
+
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc((1.5em + 0.75rem) + 2px);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgb(73, 80, 87);
+  background-color: rgb(255, 255, 255);
+  background-clip: padding-box;
+  padding: 0.375rem 0.75rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(206, 212, 218, 0);
+  border-image: initial;
+  border-radius: 4rem;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+/*  BUTTONS */
+.btn-learn {
+  color: #fff;
+  background-color: #64B25B;
+  border-color: #64B25B;
+}
+.btn-learn:hover {
+  color: #64B25B;
+  background-color: #fff;
+  border-color: #fff;
+  text-decoration: none;
+}
+.btn-2 {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem .75rem;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  border-radius: 0;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #64B25B !important;
+  border-color: #64B25B !important;
+}
+.btn-primary:hover {
+  color: #64B25B !important;
+  background-color: #fff !important;
+  border-color: #fff !important;
+  text-decoration: none;
+}
+.btn {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem .75rem;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  border-radius: 0;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+/* Payment.html  */
+.turtle-payment{
+  background-color: #F8F8F8;
+  width: 60%;
+  margin-top: 5rem;
+}
+.card-payment-first{
+  margin-top: 5rem;
+
+}
+.card-payment-first h1{
+  color: #64B25B;
+  text-align: center;
+}
+.card-body-payment {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem 5rem;
+}
+.card-payment {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #f8f8f8;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: -4rem;
+}
+.old-price-payment {
+  text-decoration: line-through;
+  color: rgba(0, 0, 0, 0.507);
+  margin-left: 0.8rem;
+  text-align:left;
+}
+.card-title-payment {
+  margin-bottom: .75rem;
+  text-align: left;
+  font-size: 2rem;
+  color: #64B25B;
+  font-family: 'Oswald';
+}
+.add-more-payment {
+  display: inline;
+  float: right;
+  margin-top: -5rem;
+  margin-right: 7rem;
+}
+.add-more-payment li{
+  list-style: none;
+  display: inline;
+  margin: 0.7rem;
+}
+.add-more-payment a{
+  color: #64B25B;
+
+}
+.price-payment {
+  background-color: #64B25B;
+  width: 50px;
+  margin-top: 0rem;
+  border-radius: 0 1.4rem 0 0;
+}
+.price-payment p{
+  font-size: 0.7rem;
+  color: #fff;
+  text-align: center;
+  margin-top: 10px;
+}
+.add-to-favourite{
+  right:0;
+  position: absolute;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+}
+.add-to-favourite p{
+  display: inline;
+  font-size: 0.8rem;
+  font-family: 'Oswald light';
+  color:#64B25B;
+}
+.add-to-favourite i{
+  color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke: 1px #64B25B;
+  transition: ease-in-out 0.3s;
+}
+.add-to-favourite i:hover{
+  color: #64B25B;
+  transition: ease-in-out 0.3s;
+}
+.cargo-gift{
+  margin-top: 2rem;
+}
+
+.cargo-gift li{
+  display: block;
+  list-style-type: none;
+  font-family: 'Oswald';
+  font-weight: 600;
+  color: #000;
+}
+.cargo-gift i{
+  letter-spacing: 10px;
+  color:#64B25B;
+  font-size: 2rem;
+}
+.about-product h1{
+  color:#64B25B;
+}
+.about-product p{
+  color:#000;
+}
+.turtle-food-payment{
+  margin-top: 5rem;
+}
+/* payment button */
+.btn-primary-payment {
+  color: #fff;
+  background-color: #64B25B !important;
+  border-color: #64B25B !important;
+}
+.btn-primary-payment:hover {
+  color: #64B25B !important;
+  background-color: #fff !important;
+  border-color: #fff !important;
+  text-decoration: none;
+}
+.btn-payment {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 4.75rem;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  border-radius: 5rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+/* MEDIA */
+@media (min-width: 992px){
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: .5rem;
+    padding-left: .5rem;
+    margin: 1rem;
+}
+.picture-food{
+  width: 20%;
+}
+}
+@media (max-width: 991px){
+  .picture-food{
+    width: 40%;
+  }
+  #footer-section{
+    text-align: center !important;
+  }
+  .paymaster{
+    text-align: center;
+  }
+  .paymaster img{
+    width: 30%;
+
+  }
+  .add-more-payment {
+    display: inline;
+    float: right;
+    margin-top: -5rem;
+    margin-right: -3rem;
+  }
+
+}
