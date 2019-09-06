@@ -1,0 +1,18 @@
+// Second section
+#second-section{
+  height: 100vh;
+  background-color: #2e3a46;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+    .about{
+      font-size: 4rem;
+    }
+    .blabla{
+      font-size: 1.5rem;
+      text-align: center;
+    }
+}
