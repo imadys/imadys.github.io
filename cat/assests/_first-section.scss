@@ -1,7 +1,10 @@
 #first-section{
   background-image: url(./imgs/firstcat.jpg);
   background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
   background-position: center;
+  background-repeat: no-repeat;
   height: 100vh;
     nav{
       height: 15vh;
