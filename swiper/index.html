@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SwiperJS</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide slide1">
+        <h1>Lovely Flowers</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+      </div>
+
+      <div class="swiper-slide slide2">
+        <h1>Lovely Flowers</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+      </div>
+
+      <div class="swiper-slide slide3">
+        <h1>Lovely Flowers</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+      </div>
+    </div>
+
+    <div class="siper-pagination">
+
+      <div class="swiper-button-next swiper-button-white"></div>
+      <div class="swiper-button-prev swiper-button-white"></div>
+
+    </div>
+
+  </div>
+
+
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+  <script>
+
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'cube',
+      grabCursor: true,
+      cubeEffect: {
+        shadow: false,
+        slideShadows: false,
+        shadowOffset: 20,
+        shadowScale: 0.95,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      }
+    })
+
+  </script>
+</body>
+
+</html>
